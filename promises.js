@@ -1,6 +1,6 @@
 console.log("helo world")
 
-const myPromise = new Promise((resolve, reject) => {
+const myPromise = new Promise((resolve, reject) => { // aike promise ya to solve hota hey ya reject
     var isCivic= true
     if(isCivic){
         resolve("pakistan zindabad")
@@ -8,15 +8,15 @@ const myPromise = new Promise((resolve, reject) => {
         reject("pakistan phir sey zindabad")
     }
 })
-.then((answer)=>{
+.then((answer)=>{ // shi jwaab ka answer yha aay ga
     console.log(answer)
 })
-.catch((error)=>{
+.catch((error)=>{ // ghlat jawaab ka answer yha ay ga
     console.log(error)
 })
 
-fetch("https://api.escuelajs.co/api/v1/products/")
-
+fetch("https://api.escuelajs.co/api/v1/products/") // ye aike api  kei link hey
+// fetch short keyword hey promise ko likhny ka
 .then((xra) => {
 
     
